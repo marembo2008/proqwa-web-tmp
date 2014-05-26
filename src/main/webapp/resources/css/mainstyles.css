@@ -1,0 +1,123 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 26, 2014, 11:54:12 AM
+    Author     : mochieng
+*/
+
+html, body{
+    width: 100%;
+    height: auto;
+}
+
+html{
+    background: #f0f0f0;
+}
+
+html, body, div, span, a, select, input, textarea, option{
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;
+}
+
+.pq-header{
+    height: 30px;
+    padding: 0.5%;
+    width: 99%;
+    background: #e7dfe7;
+    position: fixed;
+}
+
+.pq-header .pq-header-info, .pq-main{
+    width: 70%;
+    margin: auto;
+}
+
+.pq-header .pq-header-info{
+    position: relative;
+}
+
+.pq-header .pq-header-info a.pq-logo, .pq-header .pq-header-info a.pq-profile-home{
+    font-size: 25px;
+    font-weight: bold;
+    color: #575f67;
+}
+
+.pq-header .pq-header-info a.pq-logo{
+    margin-left: -7px;
+}
+
+.pq-header .pq-header-info a.pq-profile-home{
+    font-size: 14px;
+    margin-top:  5px;
+    right: 15px;
+    float: right;
+    position: relative;
+    color: #575f67;
+}
+
+.pq-header .pq-header-info a.pq-profile-home .pq-info{
+    display: inline-block;
+    padding: 3px;
+    padding-bottom: 7px;
+    padding-left: 6px; 
+    height: 10px;
+    width: 11px;
+    border-radius: 100px;
+    background: #575f67;
+    position: absolute;
+    color: #ff5656;
+    top: -10px;
+    margin-left: 3px;
+}
+
+.pq-header .pq-header-info input.pq-search-bx{
+    width: 450px;
+    height: 27px;
+    box-shadow: 0 0 2px 1px #ff5656;
+    border-radius: 2px;
+    position: absolute;
+    left: 130px;
+    top: 0px;
+    border: 0px none;
+    padding-left: 30px;
+    background-position: 5px 3px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-image: url(#{request.contextPath}/resources/images/pq-search-img.png);
+}
+
+.pq-main{
+    box-shadow:  0px 0px 20px 3px #d0d0d0;
+    height: 100%;
+    z-index: 100;
+    background: #fff;
+    padding-top: 50px;
+}
+
+.pq-main .pq-trending{
+    float: left;
+}
+
+button{
+    background: linear-gradient(#e7dfe7, #575f67, #e7dfe7);
+    box-shadow: none;
+    border: 0px none;
+}
+
+button.pq-post-qs{
+    font-size: 14px;
+    padding: 10px 25px;
+    color: #e7dfe7;
+}

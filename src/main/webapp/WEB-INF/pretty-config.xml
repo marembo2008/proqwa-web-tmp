@@ -1,0 +1,31 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces" 
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+    <url-mapping id="question">
+        <pattern value="/questions/#{questionController.questionTitle}" />
+        <view-id value="/questions/view.xhtml" />
+    </url-mapping>
+    <url-mapping id="article">
+        <pattern value="/articles/#{articleController.articleTitle}" />
+        <view-id value="/articles/view.xhtml" />
+    </url-mapping>
+    <url-mapping id="profile">
+        <pattern value="/profiles/#{profileController.profileName}" />
+        <view-id value="/profiles/view.xhtml" />
+    </url-mapping>
+    <url-mapping id="home">
+        <pattern value="/trending-questions-and-articles" />
+        <view-id value="/index.xhtml" />
+    </url-mapping>
+    <url-mapping id="trendingQuestions">
+        <pattern value="/trending-questions" />
+        <view-id value="/questions/questions.xhtml" />
+    </url-mapping>
+    <url-mapping id="trendingArticles">
+        <pattern value="/trending-articles" />
+        <view-id value="/articles/articles.xhtml" />
+    </url-mapping>
+
+</pretty-config>
