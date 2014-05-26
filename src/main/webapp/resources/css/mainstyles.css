@@ -31,6 +31,14 @@ a{
     clear: both;
 }
 
+.pq-right{
+    float: right;
+}
+
+.pq-left{
+    float: left;
+}
+
 .pq-header{
     height: 30px;
     padding: 0.5%;
@@ -110,14 +118,32 @@ a{
     float: left;
 }
 
+.pq-ad{
+    display: inline-block;
+    width: 50%;
+    padding: 1%;
+    font-size: 13px;
+}
+
+.pq-ad .pq-ad-title{
+    color: #66789f;
+}
+
 button{
     background: linear-gradient(#e7dfe7, #575f67, #e7dfe7);
     box-shadow: none;
     border: 0px none;
+    display: inline-block;
 }
 
-button.pq-post-qs{
+button.pq-post-qs, button.pq-post-art{
     font-size: 14px;
     padding: 10px 25px;
     color: #e7dfe7;
+    margin-top: -4px;
+}
+
+button.pq-post-art{
+    background: linear-gradient(#575f67, #e7dfe7, #575f67);
+    color: #666;
 }
